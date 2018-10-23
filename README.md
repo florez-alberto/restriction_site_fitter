@@ -6,7 +6,7 @@ Contains the following:
 
 +RMD file with kniter functions (RS_fitter)  
 +R file with only the functions (restriction_site_fitter)  
-+txt file with excersice original text  
++txt file with exercise original text  
 +HTML file with knitted RMD file  
 +PDF file with the printable version of the html file   
 
