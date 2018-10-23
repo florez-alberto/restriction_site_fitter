@@ -2,10 +2,14 @@
 R code
 Restriction site fitter for TD2 M1 Molecular and Celullar Biology UGA
   
-Contains the following functions:
-+Complement DNA
-+Reverse DNA
-+Find DNA match
+Contains the following:
+
++RMD file with kniter functions (RS_fitter)
++R file with only the functions (restriction_site_fitter)
++txt file with excersice original text
++HTML file with knitted RMD file
++PDF file with the printable version of the html file 
+
   
 TD2 exercise 3:
 Introduce in each sequence a restriction site in order to clone it in the proper Open Reading Frame (ORF) and right orientation

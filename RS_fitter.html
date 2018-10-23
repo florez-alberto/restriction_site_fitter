@@ -464,163 +464,9 @@ nchar(begining_seq)</code></pre>
 ##   .. ..$ enzime  : chr &quot;GAGCTC&quot;
 ##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
 ##  $ XbaI   : list()</code></pre>
-<pre class="r"><code>str(lapply(site_mut, find_DNA_match, begining_seq, 3, &quot;start&quot;))</code></pre>
-<pre><code>## List of 9
-##  $ HindIII: list()
-##  $ EcoRI  :List of 3
-##   ..$ E_S28 :List of 4
-##   .. ..$ position: int [1:6] 28 29 30 31 32 33
-##   .. ..$ sequence: chr &quot;GCACTA&quot;
-##   .. ..$ enzime  : chr &quot;GAATTC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_S31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;CTTAAG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;GAATTC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
-##  $ Asp718I:List of 1
-##   ..$ E_S25:List of 4
-##   .. ..$ position: int [1:7] 25 26 27 28 29 30 31
-##   .. ..$ sequence: chr &quot;GAGGCAC&quot;
-##   .. ..$ enzime  : chr &quot;GGATACC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##  $ KpnI   :List of 3
-##   ..$ E_S7  :List of 4
-##   .. ..$ position: int [1:6] 7 8 9 10 11 12
-##   .. ..$ sequence: chr &quot;GTCCGC&quot;
-##   .. ..$ enzime  : chr &quot;GGTACC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_S31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;CCATGG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;GGTACC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
-##  $ BamHI  :List of 4
-##   ..$ E_S25 :List of 4
-##   .. ..$ position: int [1:6] 25 26 27 28 29 30
-##   .. ..$ sequence: chr &quot;GAGGCA&quot;
-##   .. ..$ enzime  : chr &quot;GGATCC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S28 :List of 4
-##   .. ..$ position: int [1:6] 28 29 30 31 32 33
-##   .. ..$ sequence: chr &quot;GCACTA&quot;
-##   .. ..$ enzime  : chr &quot;GGATCC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_S31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;CCTAGG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;GGATCC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
-##  $ EcoRV  :List of 2
-##   ..$ RE_S31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;CTATAG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;GATATC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
-##  $ NotI   :List of 8
-##   ..$ E_S1 :List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;CCACGC&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S4 :List of 4
-##   .. ..$ position: int [1:6] 4 5 6 7 8 9
-##   .. ..$ sequence: chr &quot;CGCGTC&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S7 :List of 4
-##   .. ..$ position: int [1:6] 7 8 9 10 11 12
-##   .. ..$ sequence: chr &quot;GTCCGC&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S10:List of 4
-##   .. ..$ position: int [1:6] 10 11 12 13 14 15
-##   .. ..$ sequence: chr &quot;CGCCCA&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S13:List of 4
-##   .. ..$ position: int [1:6] 13 14 15 16 17 18
-##   .. ..$ sequence: chr &quot;CCACGC&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S16:List of 4
-##   .. ..$ position: int [1:6] 16 17 18 19 20 21
-##   .. ..$ sequence: chr &quot;CGCGTC&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S19:List of 4
-##   .. ..$ position: int [1:6] 19 20 21 22 23 24
-##   .. ..$ sequence: chr &quot;GTCCGG&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S22:List of 4
-##   .. ..$ position: int [1:6] 22 23 24 25 26 27
-##   .. ..$ sequence: chr &quot;CGGGAG&quot;
-##   .. ..$ enzime  : chr &quot;CGGCCG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##  $ XhoI   :List of 6
-##   ..$ E_S4   :List of 4
-##   .. ..$ position: int [1:6] 4 5 6 7 8 9
-##   .. ..$ sequence: chr &quot;CGCGTC&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S16  :List of 4
-##   .. ..$ position: int [1:6] 16 17 18 19 20 21
-##   .. ..$ sequence: chr &quot;CGCGTC&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S19  :List of 4
-##   .. ..$ position: int [1:6] 19 20 21 22 23 24
-##   .. ..$ sequence: chr &quot;GTCCGG&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S22  :List of 4
-##   .. ..$ position: int [1:6] 22 23 24 25 26 27
-##   .. ..$ sequence: chr &quot;CGGGAG&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ E_S31  :List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;GAGCTC&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
-##  $ XbaI   :List of 2
-##   ..$ E_S31  :List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;CTAGGG&quot;
-##   .. ..$ enzime  : chr &quot;TCTAGA&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS31:List of 4
-##   .. ..$ position: int [1:6] 31 32 33 34 35 36
-##   .. ..$ sequence: chr &quot;GATCCC&quot;
-##   .. ..$ enzime  : chr &quot;AGATCT&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;</code></pre>
-<pre class="r"><code>#for the final seq, fin the closest to the begining
+<pre class="r"><code>#str(lapply(site_mut, find_DNA_match, begining_seq, 3, &quot;start&quot;))
+
+#for the final seq, fin the closest to the begining
 #find the closest to 1
 
 str(lapply(site_mut, find_DNA_match, final_seq, 1, &quot;final&quot;))</code></pre>
@@ -665,77 +511,7 @@ str(lapply(site_mut, find_DNA_match, final_seq, 1, &quot;final&quot;))</code></p
 ##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
 ##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
 ##  $ XbaI   : list()</code></pre>
-<pre class="r"><code>str(lapply(site_mut, find_DNA_match, final_seq, 3, &quot;final&quot;))</code></pre>
-<pre><code>## List of 9
-##  $ HindIII:List of 2
-##   ..$ E_S1  :List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;AAGCTT&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;TTCGAA&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
-##  $ EcoRI  :List of 2
-##   ..$ E_S1  :List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;GAATTC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;CTTAAG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
-##  $ Asp718I: list()
-##  $ KpnI   : list()
-##  $ BamHI  :List of 2
-##   ..$ E_S1  :List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;GGATCC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;CCTAGG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
-##  $ EcoRV  :List of 2
-##   ..$ E_S1  :List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;GATATC&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, DNA strand&quot;
-##   ..$ RE_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;CTATAG&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, complement DNA strand&quot;
-##  $ NotI   : list()
-##  $ XhoI   :List of 2
-##   ..$ RE_S1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;GAGCTC&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;CTCGAG&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;
-##  $ XbaI   :List of 2
-##   ..$ RE_S1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;TAGTTC&quot;
-##   .. ..$ enzime  : chr &quot;AGATCT&quot;
-##   .. ..$ type    : chr &quot;reverse direction enzime, DNA strand&quot;
-##   ..$ E_CS1:List of 4
-##   .. ..$ position: int [1:6] 1 2 3 4 5 6
-##   .. ..$ sequence: chr &quot;ATCAAG&quot;
-##   .. ..$ enzime  : chr &quot;TCTAGA&quot;
-##   .. ..$ type    : chr &quot;same direction enzime, complement DNA strand&quot;</code></pre>
+<pre class="r"><code>#str(lapply(site_mut, find_DNA_match, final_seq, 3, &quot;final&quot;))</code></pre>
 </div>
 <div id="the-exercise" class="section level1">
 <h1>the exercise</h1>
@@ -745,7 +521,7 @@ str(lapply(site_mut, find_DNA_match, final_seq, 1, &quot;final&quot;))</code></p
 <p>If XhoI were the end restriction site, it would cut also at the begining because it fits correctly on the two sites.</p>
 <p>only 1 posibility: If EcoRI was the end restriction site, BamHI is the only that fits and they go oposite directions on the DNA strand. BamHi is the only that is before EcoRI, the others are after meaning it would paste the DNA backwards, so the START signal would be at the end.</p>
 <p>Conclusion With 2 substitutions, the best restriction site enzimes would be EcoRI &amp; BamHI.</p>
-<p>ADITIONAL INFORMATION: I also analized for 3 substitutions,</p>
+<p>ADITIONAL INFORMATION: I also analized for 3 substitutions, and EcoRI fits with 3 substitutions at the begining, so there is still a chance that it could be pasted backwards. However, it is the best fit.</p>
 </div>
 
 
