@@ -1,0 +1,33 @@
+TD2 : Tools and Methods for Cloning
+You want to assess if an equivalent of the human gene HAT-gme exists in Mouse. The
+HAT-gme human protein has a Histone Acetyltransferase or Histone Acetylase activity
+(HAT1). The sequence of the human gene is fully known. The HAT1-gme protein acetylates
+histones H2A and H4 on lysine residues at their N-terminus part.
+1) Which preliminary experiment(s) would indicate the possible existence of this gene in
+Mouse?
+The experiment proved successful: you identified the existence of a human HAT1-gme
+homolog in Mouse.
+2) You want to clone and sequence the murine HAT-gme cDNA.
+Which strategy will you use for this? Indicate the different experimental steps you go through.
+Which characteristics should your cloning vector(s) have knowing that you aim at expression
+of this gene in eukaryotic cells?
+3) You now know the sequence of the Mouse HAT1-gme cDNA. This sequence is shown
+below (5Та 3Т) with start and stop codons in bold. You want to proceed with overexpression
+of this protein in order to study its sub-cellular localisation, identify its interacting protein
+partners and intracellular targets.
+Indicate the main features of the vectors you could use to answer to do these experiments.
+You want to clone this gene in the pCDNA3.1 vector which carries 2 TAG sequences: His in
+N-ter and FLAG in C-ter. Design 2 primers of 20 nt that you would use to amplify the HAT1-
+gme cDNA by PCR. Introduce in each sequence a restriction site in order to clone it in the
+proper Open Reading Frame (ORF) and right orientation.
+Remarks :
+- No restriction site of the MCS is found in the sequence to clone.
+- The His and FLAG sequences have to be linked to the N and C ter of the HAT1 protein
+CCACGCGTCCGCCCACGCGTCCGGGAGGCACTAGGGATGGTCCGCAGGATTGGA
+CTGATACAGAGGCCGCCACGGAGCCCGCCGGAGCCACCGTTCCTGCTGCTGCCGC
+CGCTGCCCGAATCGGAACCGTCGGGCCGCAGCCGCCGGCAATGCCGCGAAGGAA
+GAGGAATGCAGGCAGTAGTTCAGATGGAACCGAAGATTCCGATTTTCTACAGA
+Restriction sites:
+Hind III : A/AGCTT, Eco RI : G/AATTC, Asp718 I : G/GATACC, Kpn I : GGTAC/C,
+BamHI : G/GATCC, Eco RV : GAT/ATC, Not I : C/GGCCG, XhoI : C/TCGAG, XbaI :
+T/CTAGA
